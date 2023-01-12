@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(209, 140, 49);
+    background: url("../background.jpg");
+    min-height: 100vh;
+    background-size: 100vw 110vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#board {
+    background: linear-gradient(rgb(190, 120, 211), rgba(108, 218, 108, 0.725));
+    width: 90vmin;
+    height: 92vmin;
+    opacity: 0.9;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    margin:0;
+    padding: 0;
+}
+
+.head {
+    background: linear-gradient(rgb(215, 136, 90), rgb(216, 71, 71));
+    transform: scale(1.02);
+    border-radius: 9px;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+#scoreBox {
+    margin: 2rem auto;
+    position:absolute;
+    top: 10px;
+    right: 130px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+#hiscoreBox {
+    position: absolute;
+    margin-top: 2rem;
+    top:80px;
+    right: 40px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.snake {
+    background: linear-gradient(rgb(209, 186, 55), rgb(129, 129, 12));
+    border-radius: 12px;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.food {
+    background: linear-gradient(rgb(101, 48, 48), rgb(23, 21, 21));
+    border-radius: 12px;
+    opacity: 1;
+    border: 1px solid black;
+}
